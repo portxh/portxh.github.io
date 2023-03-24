@@ -19,8 +19,8 @@
             Usuario
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#signin-modal.php">Entrar</a>
-          <a class="dropdown-item" href="#signup-modal.php">Cadastrar</a>
+          <a class="dropdown-item" href="#signinModal">Entrar</a>
+          <a class="dropdown-item" href="#signupModal">Cadastrar</a>
         </div>
       </li>
     </ul>

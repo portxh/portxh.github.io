@@ -6,7 +6,6 @@ $Cpf = $_POST['Cpf'];
 $Nome = $_POST['Nome'];
 $Celular = $_POST['Celular'];
 $Email = $_POST['Email'];
-//$Senha = $_POST['Senha'];
 $Senha = password_hash($_POST['Senha'], PASSWORD_DEFAULT);
 
 
