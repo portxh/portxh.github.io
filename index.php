@@ -47,6 +47,47 @@
         </div>
     </div>
 
+     <!-- Seção de Promoções // Viewport define a altura -->
+     <div id="ofertas" class="viewport ofertas">
+        <div class="container justify-content-around">
+        
+
+            <!-- Titulo da Seção -->
+                <h1>Ofertas da Semana</h1>            
+
+            <!-- Conjunto de Cards/Produtos -->
+            <div class="card-deck d-flex justify-content-around">
+
+                <!-- Card de UM Produto -->
+                <?php
+
+                // Obtendo os produtos do banco de dados
+                $resultado = mysqli_query($con, "SELECT * FROM produtos");
+
+                // Exibindo os produtos na vitrine
+                while ($IdProd = mysqli_fetch_array($resultado)) {
+                    echo '<div class="card">';
+                        
+                        echo '<img src="img/' . $IdProd["imagem"] . '" class="img-prod" alt="' . $IdProd["nomeProd"] . '">';
+                        
+                        echo '<div class="card-body">';
+                            echo '<h5 class="card-title">' . $IdProd["nomeProd"] . '</h5>';
+                            echo '<p class="card-text">' . $IdProd["descProd"] . '</p>';
+                            echo '<p class="card-text">R$ ' . number_format($IdProd["precoProd"], 2, ',', '.') . '</p>';
+                        echo '</div>';
+                        //echo '<div class="card-footer"';
+                            echo '<button type="submit" class="btn justify-content-around btn-primary">Adicionar ao Carrinho</button>';
+                        //echo '</div>';
+                    echo '</div>';
+                }
+
+                ?>
+               
+            </div>
+
+        </div>
+    </div>
+
     </main>
 </body>
 </html>

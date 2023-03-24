@@ -4,7 +4,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
+    <ul class=" container navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
       </li>
