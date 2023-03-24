@@ -6,37 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Barra de Navegação */
-
-nav {
-    height: 70px;
-}
-
-.menu {
-    margin: auto;
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-item a {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 21px;
-    font-weight: 200;
-    color: white;
-}
-
-.nav-item a:hover {
-    color: black;
-}
-
-/* Definindo a altura das seções do site */
-
 .viewport {
     height: 100vh;
 }
