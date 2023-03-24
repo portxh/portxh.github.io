@@ -18,15 +18,15 @@ if (!empty($Email) && !empty($Senha)) {
         if (password_verify($Senha, $row['Senha'])) {
             // Cria uma sessão de login e redireciona para a página de destino
             $_SESSION['Email'] = $Email;
-            header("Location: inicio.php");
+            header("Location: index.php");
             exit();
         } else {
             // Senha incorreta
-            echo "<script>alert('Usuário ou senha incorretos. Tente novamente.'); window.location='inicio.php';</script>"; 
+            echo "<script>alert('Usuário ou senha incorretos. Tente novamente.'); window.location='index.php';</script>"; 
         }
     } else {
         // Nome de usuário não encontrado
-        echo "<script>alert('Usuário não encontrado. Tente novamente.'); window.location='inicio.php';</script>"; 
+        echo "<script>alert('Usuário não encontrado. Tente novamente.'); window.location='index.php';</script>"; 
     }
 } else {
     // Campos de login em branco

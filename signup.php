@@ -23,9 +23,9 @@ if (mysqli_num_rows($result) == 1) {
     $linha = $con->query($isql);
 
     if ($linha) {
-        echo "<script>alert('Cadastro realizado com sucesso.'); window.location='inicio.php';</script>"; 
+        echo "<script>alert('Cadastro realizado com sucesso.'); window.location='index.php';</script>"; 
     } else {
-        echo "<script>alert('Erro ao cadastrar usuário. Tente novamente.'); window.location='inicio.php';</script>"; 
+        echo "<script>alert('Erro ao cadastrar usuário. Tente novamente.'); window.location='index.php';</script>"; 
     }
 
 }

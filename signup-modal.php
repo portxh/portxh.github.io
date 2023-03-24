@@ -10,7 +10,7 @@
                     </button>
             </div>
 
-            <div class="modal-body d-flex">
+            <div class="modal-body">
                 
                 <form action="signup.php" method="post">
 
