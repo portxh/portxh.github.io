@@ -9,7 +9,7 @@
 
     // Exibindo os produtos na vitrine
     while ($IdProd = mysqli_fetch_array($resultado)) {
-        echo '<div class="card-deck">'
+        echo '<div class="card-deck">';
         echo '<div class="card-4">';
             
             echo '<img src="img/' . $IdProd["imagem"] . '" class="img-prod" alt="' . $IdProd["nomeProd"] . '">';
