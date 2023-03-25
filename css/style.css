@@ -72,6 +72,12 @@
     
 }
 
+.img-prod img{
+    image-rendering: optimizeQuality;
+    background-position: center;
+    background-size: cover;
+}
+
 /* Terceira seção do site - Catalogo de produtos e carrinho */
 
 .loja {
