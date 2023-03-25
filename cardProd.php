@@ -1,5 +1,5 @@
 <!-- Conjunto de Cards/Produtos -->
-<div class="card-deck d-flex flex-wrap justify-content-around">
+<div class="d-flex flex-wrap justify-content-around">
 
     <!-- Card de UM Produto -->
     <?php
@@ -9,6 +9,7 @@
 
     // Exibindo os produtos na vitrine
     while ($IdProd = mysqli_fetch_array($resultado)) {
+        echo '<div class="card-deck">'
         echo '<div class="card-4">';
             
             echo '<img src="img/' . $IdProd["imagem"] . '" class="img-prod" alt="' . $IdProd["nomeProd"] . '">';
@@ -22,6 +23,8 @@
                 echo '<button type="submit" class="btn justify-content-around btn-primary">Adicionar ao Carrinho</button>';
             //echo '</div>';
         echo '</div>';
+        echo '</div>';
+
     }
 
     ?>
